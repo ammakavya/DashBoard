@@ -28,13 +28,6 @@ function App() {
             
               <ProductDetails />
               <ActivityDetails />
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
                 <Transactions/>
         
           

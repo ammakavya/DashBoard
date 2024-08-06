@@ -22,7 +22,7 @@ const reviews = [
 
 const ReviewPage = () => {
   return (
-    <Box sx={{ display: 'flex', justifyContent: 'center' ,mt:1}}>
+    <Box sx={{ display: 'flex', justifyContent: 'center' ,mt:3}}>
       <Paper
         elevation={1}
         sx={{

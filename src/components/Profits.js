@@ -99,7 +99,10 @@ const Profits = () => {
         </Grid>
         <Grid item xs={12} md={6} sx={{ display: "flex", justifyContent: "center" }}>
           <CircularProgressWithLabel value={70} size={100} thickness={4} />
+         
         </Grid>
+        <Typography sx={{marginLeft:'60%'}} variant="caption"> the value has been rounded off</Typography>
+      
       </Grid>
     </Paper>
   );

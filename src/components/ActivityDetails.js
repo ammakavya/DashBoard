@@ -40,7 +40,7 @@ const data = [
 
 const ActivityDetails = () => {
   return (
-    <Container sx={{ marginLeft: { xs: '0', sm: '10%' ,xl :'0'}, width: '100%', maxWidth: '950px', height: '100px' }}>
+    <Container sx={{ marginLeft: { xs: '0', sm: '10%' ,xl :'0'}, width: '100%', maxWidth: '1000px', height: '100px' }}>
       <Paper sx={{ padding: '1px', marginTop: '10px', backgroundColor: '#333' }}>
         <ResponsiveContainer width="100%" height={300}>
           <BarChart data={data} margin={{ top: 20, right: 30, left: 0, bottom: 5 }}>
