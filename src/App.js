@@ -22,20 +22,20 @@ function App() {
       </Typography>
       <Box>
         <Grid container className="grid-container">
-          <Grid md={0.5}>
-            <MenuBoard />
-          </Grid>
-          <Grid md={7.7}>
-            <ProductDetails />
-            <ActivityDetails />
-            <Transactions />
-          </Grid>
-          <Grid md={3.5}>
-            <Profits />
-            <GoalsPages />
-            <ReviewPage />
-          </Grid>
-          <Grid></Grid>
+        <Grid item xs={12} sm={4} md={0.5}>
+  <MenuBoard />
+</Grid>
+<Grid item xs={12} sm={8} md={7}>
+  <ProductDetails />
+  <ActivityDetails />
+  <Transactions />
+</Grid>
+<Grid item xs={12} sm={4} md={3}>
+  <Profits />
+  <GoalsPages />
+  <ReviewPage />
+</Grid>
+        
         </Grid>
       </Box>
     </div>
