@@ -21,7 +21,7 @@ function App() {
         Dashboard
       </Typography>
       <Box>
-        <Grid container>
+        <Grid container className="grid-container">
           <Grid md={0.5}>
             <MenuBoard />
           </Grid>
