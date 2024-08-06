@@ -26,7 +26,7 @@ const ReviewPage = () => {
       <Paper
         elevation={1}
         sx={{
-          width: { xs: '100%', sm: '500px' ,xl:'100%'},
+          width: { xs: '100%', sm: '100%' ,xl:'100%'},
           backgroundColor: '#333',
           color: 'white',
           borderRadius: '10px',

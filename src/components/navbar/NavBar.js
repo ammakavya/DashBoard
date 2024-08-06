@@ -12,17 +12,17 @@ const NavBar = () => {
       <div className="navbar-search">
         <input type="text" placeholder="Search..." />
       </div>
-      <Box sx={{ display: 'flex', alignItems: 'center' }}>
-        <Avatar sx={{ bgcolor: '#333', width: 35, height: 35, marginRight: '50px' }}>
+      <Box className="navbar-icons" sx={{ display: 'flex', alignItems: 'center' }}>
+        <Avatar sx={{ bgcolor: '#333', width: 35, height: 35, marginRight: '40px' }}>
           <EmailIcon />
         </Avatar>
         <Avatar sx={{ bgcolor: '#333', width: 35, height: 35, marginRight: '40px' }}>
           <NotificationsActiveIcon />
         </Avatar>
-        <Avatar sx={{ bgcolor: '#333', width: 35, height: 35, marginRight: '30px' }}>
+        <Avatar sx={{ bgcolor: '#333', width: 35, height: 35, marginRight: '40px' }}>
           <SettingsIcon />
         </Avatar>
-        <Avatar sx={{ bgcolor: '#333', width: 35, height: 35, marginRight: '30px' }}>
+        <Avatar sx={{ bgcolor: '#333', width: 35, height: 35, marginRight: '40px' }}>
           <AccountCircleIcon />
         </Avatar>
       </Box>

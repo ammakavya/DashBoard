@@ -12,7 +12,7 @@ const GoalsPages = () => {
         elevation={1}
         sx={{
           backgroundColor: '#333',
-          width: { xs: '100%', sm: '70px' ,xl:'100%' },
+          width: { xs: '100%', sm: '100%' ,xl:'100%' },
           height: '100%',
           p: 5,
           marginTop:'5px'

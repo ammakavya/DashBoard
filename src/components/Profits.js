@@ -68,7 +68,7 @@ const Profits = () => {
     <Paper
       elevation={1}
       sx={{
-        width: { xs: "100%", sm: "500px",xl:'100%' }, // Responsive width
+        width: { xs: "100%", sm: "100%",xl:'100%' }, // Responsive width
         height: "175px",
         backgroundColor: "#333",
         color: "white",
