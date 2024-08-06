@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color:black ;
+    background-color: black;
 }
 
 .navbar {
@@ -14,25 +14,27 @@ body {
 }
 
 .navbar-search input {
-    margin-left: auto;
     padding: 6px;
     border-radius: 10px;
-    background-color:#333;
+    background-color: #555; /* Slightly different color for better contrast */
     font-size: 1em;
+    margin-left: 110px;
     width: 250px;
-  
-   
+    border: none;
+    color: white;
 }
 
+.navbar-search input::placeholder {
+    color: #aaa; /* Placeholder color */
+}
+
+.navbar-avatar {
+    display: flex;
+    align-items: center;
+}
 
 .navbar-avatar img {
-    width: 40px;
-    height: 40px;
+    width: 35px; /* Consistent with Avatar size */
+    height: 35px;
     border-radius: 50%;
-   
-}
-.navbar-search{
-    margin-left: 120px;
-   
-
 }

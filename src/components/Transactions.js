@@ -13,21 +13,18 @@ function createData(customer, OrderNo, Amount, Status, avatarUrl) {
 }
 
 const rows = [
-  createData('wade warren', 1, '$200', 'delivered', 'https://mdbcdn.b-cdn.net/img/new/avatars/2.webp'),
-  createData('jane cooper', 2, '$500', 'delivered','https://www.gravatar.com/avatar/2c7d99fe281ecd3bcd65ab915bac6dd5?s=250'),
-  createData('guy hawkins', 3, '$750', 'cancelled','https://www.shutterstock.com/image-photo/adult-female-avatar-image-on-260nw-2420293027.jpg'),
-  createData('kristin watson', 4, '$375', 'pending','https://thenewstack.io/wp-content/uploads/2016/11/Joe-Emison_avatar_1479739811.png'),
-  createData('cody fisher', 5, '$160', 'delivered','https://t3.ftcdn.net/jpg/04/60/91/88/360_F_460918802_XVCymFr7MoziFpnInbTDvrlblYhvAOi2.jpg'),
+  createData('Wade Warren', 1, '$200', 'delivered', 'https://mdbcdn.b-cdn.net/img/new/avatars/2.webp'),
+  createData('Jane Cooper', 2, '$500', 'delivered','https://www.gravatar.com/avatar/2c7d99fe281ecd3bcd65ab915bac6dd5?s=250'),
+  createData('Guy Hawkins', 3, '$750', 'cancelled','https://www.shutterstock.com/image-photo/adult-female-avatar-image-on-260nw-2420293027.jpg'),
+  createData('Kristin Watson', 4, '$375', 'pending','https://thenewstack.io/wp-content/uploads/2016/11/Joe-Emison_avatar_1479739811.png'),
+  createData('Cody Fisher', 5, '$160', 'delivered','https://t3.ftcdn.net/jpg/04/60/91/88/360_F_460918802_XVCymFr7MoziFpnInbTDvrlblYhvAOi2.jpg'),
 ];
-
-
-
 
 function Transactions() {
   return (
-    <Box sx={{ marginLeft: '9%' }}>
-      <TableContainer component={Paper} sx={{ backgroundColor: '#333', width: '950px' }}>
-        <Typography variant='h5' sx={{ color: 'white', fontWeight: 'bold', marginRight: '80%' }}>
+    <Box sx={{ display: 'flex', justifyContent: 'center', mt: 5 }}>  {/* Increased mb for spacing */}
+      <TableContainer component={Paper} sx={{ backgroundColor: '#333', p: 3, width: { xs: '100%', sm: '950px', xl: '900px' } }}>
+        <Typography variant='h5' sx={{ color: 'white', fontWeight: 'bold', mb: 2 }}>
           Recent Orders
         </Typography>
         <Table aria-label="simple table">
@@ -46,17 +43,15 @@ function Transactions() {
                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
               >
                 <TableCell component="th" scope="row" sx={{ display: 'flex', alignItems: 'center', color: 'white' }}>
-                  <Avatar src={row.avatarUrl} alt={row.customer} sx={{ marginRight: 2 }} />
+                  <Avatar src={row.avatarUrl} alt={row.customer} sx={{ mr: 2 }} />
                   {row.customer}
                 </TableCell>
                 <TableCell align="right" sx={{ color: 'white' }}>{row.OrderNo}</TableCell>
                 <TableCell align="right" sx={{ color: 'white' }}>{row.Amount}</TableCell>
-                <TableCell align="right" sx={{ color: row.Status === 'cancelled' ? 'green' : 'inherit' }}>
+                <TableCell align="right" sx={{ color: row.Status === 'cancelled' || row.Status === 'pending' ? 'red' : 'green' }}>
                   <Box
                     component="span"
                     sx={{
-                    
-                      color: row.Status === 'cancelled' || row.Status === 'pending' ?'red' : 'green',
                       padding: '0 4px',
                       borderRadius: '4px',
                     }}

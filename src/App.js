@@ -1,4 +1,3 @@
-
 import "./App.css";
 import NavBar from "./components/navbar/NavBar";
 import MenuBoard from "./components/MenuBoard";
@@ -14,28 +13,40 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Typography
-        variant="h5"
-        sx={{ color: "white", fontWeight: "bold", marginRight: "70%" }}
-      >
-        Dashboard
-      </Typography>
-      <Box>
-        <Grid container className="grid-container">
-        <Grid item xs={12} sm={4} md={0.5}>
-  <MenuBoard />
-</Grid>
-<Grid item xs={12} sm={8} md={7}>
-  <ProductDetails />
-  <ActivityDetails />
-  <Transactions />
-</Grid>
-<Grid item xs={12} sm={4} md={3}>
-  <Profits />
-  <GoalsPages />
-  <ReviewPage />
-</Grid>
+      <Box sx={{ padding: 1 }}>
+        <Typography
+          variant="h5"
+          sx={{ color: "white", fontWeight: "bold", marginBottom: 1,marginLeft:'125px' }}
+        >
+          Dashboard
+        </Typography>
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={4} md={0.8}>
+            <MenuBoard />
+          </Grid>
+          <Grid item xs={12} sm={8} md={7} sx={{padding:'10px'}}>
+            
+              <ProductDetails />
+              <ActivityDetails />
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+                <Transactions/>
         
+          
+          </Grid>
+          <Grid item xs={12} sm={12} md={4}>
+            <Profits />
+            <GoalsPages />
+           
+            <ReviewPage />
+           
+          </Grid>
+         
         </Grid>
       </Box>
     </div>

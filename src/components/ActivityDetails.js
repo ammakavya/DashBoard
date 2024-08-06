@@ -1,10 +1,5 @@
-// OrderActivityChart.js
 import React from 'react';
-import {
-  Container,
-  Typography,
-  Paper,
-} from '@mui/material';
+import { Container, Paper } from '@mui/material';
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
@@ -45,12 +40,11 @@ const data = [
 
 const ActivityDetails = () => {
   return (
-    <Container sx={{width:'1000px',marginLeft:'7%',height:'300px' }}>
-    
-      <Paper style={{ padding: '20px', marginTop: '20px',backgroundColor:'#333' }}>
-        <ResponsiveContainer width="100%" height={250}>
+    <Container sx={{ marginLeft: { xs: '0', sm: '10%' ,xl :'0'}, width: '100%', maxWidth: '950px', height: '100px' }}>
+      <Paper sx={{ padding: '1px', marginTop: '10px', backgroundColor: '#333' }}>
+        <ResponsiveContainer width="100%" height={300}>
           <BarChart data={data} margin={{ top: 20, right: 30, left: 0, bottom: 5 }}>
-          <CartesianGrid strokeDasharray="3 3" vertical={false} />
+            <CartesianGrid strokeDasharray="3 3" vertical={false} />
             <XAxis dataKey="date" />
             <YAxis />
             <Tooltip />

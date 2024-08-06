@@ -11,85 +11,52 @@ import HomeIcon from "@mui/icons-material/Home";
 import InsertChartIcon from "@mui/icons-material/InsertChart";
 import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 
-
 const drawerWidth = 120;
 
 function MenuBoard(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  const [isClosing, setIsClosing] = React.useState(false);
-
-  const handleDrawerClose = () => {
-    setIsClosing(true);
-    setMobileOpen(false);
-  };
-
-  const handleDrawerTransitionEnd = () => {
-    setIsClosing(false);
-  };
 
   const handleDrawerToggle = () => {
-    if (!isClosing) {
-      setMobileOpen(!mobileOpen);
-    }
+    setMobileOpen(!mobileOpen);
   };
 
   const drawer = (
-    <div
-      style={{ height: "1000px", padding: "20px", backgroundColor: "#333" }}
-    >
-      <WindowIcon fontSize="large" sx={{color:'	#6495ED'}} />
-      <br/>
-      <br/>
-      <Divider />
-      <HomeIcon fontSize="large" sx={{color:'	#6495ED'}} />
-      <br/>
-      <br/>
-      <Divider />
-      <InsertChartIcon fontSize="large"  sx={{color:'	white' ,borderRadius:'15px'}}/>
-      <br/>
-      <br/>
-      <Divider />
-      <ListAltIcon fontSize="large"  sx={{color:'	white' ,borderRadius:'15px'}}/>
-      <br/>
-      <br/>
-      <Divider />
-      <AccountBalanceWalletIcon fontSize="large" sx={{color:'	white' ,borderRadius:'15px'}} />
-      <br/>
-      <br/>
-      <Divider />
-      <ShoppingBagIcon fontSize="large" sx={{color:'	white' ,borderRadius:'15px'}} />
-      <br/>
-      <br/>
+    <div style={{ height: "100%", padding: "20px", backgroundColor: "#333" }}>
+      <WindowIcon fontSize="large" sx={{ color: "#6495ED" }} />
+      <Divider sx={{ my: 2 }} />
+      <HomeIcon fontSize="large" sx={{ color: "#6495ED" }} />
+      <Divider sx={{ my: 2 }} />
+      <InsertChartIcon fontSize="large" sx={{ color: "white" }} />
+      <Divider sx={{ my: 2 }} />
+      <ListAltIcon fontSize="large" sx={{ color: "white" }} />
+      <Divider sx={{ my: 2 }} />
+      <AccountBalanceWalletIcon fontSize="large" sx={{ color: "white" }} />
+      <Divider sx={{ my: 2 }} />
+      <ShoppingBagIcon fontSize="large" sx={{ color: "white" }} />
     </div>
   );
 
-  // Remove this const when copying and pasting into your project.
-  const container =
-    window !== undefined ? () => window().document.body : undefined;
+  const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex",  }}>
+    <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <Box
-        component="nav"
-        aria-label="mailbox folders" 
-      >
+      <Box component="nav" aria-label="mailbox folders">
         <Drawer
           container={container}
           variant="temporary"
           open={mobileOpen}
-          onTransitionEnd={handleDrawerTransitionEnd}
-          onClose={handleDrawerClose}
+          onClose={handleDrawerToggle}
           ModalProps={{
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-           
             display: { xs: "block", sm: "none" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
+              backgroundColor: "#333",
             },
           }}
         >
@@ -98,12 +65,11 @@ function MenuBoard(props) {
         <Drawer
           variant="permanent"
           sx={{
-            backgroundColor: "black",
-
-            display: { xs: "none", sm: "block" , },
+            display: { xs: "none", sm: "block" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
+              backgroundColor: "#333",
             },
           }}
           open
@@ -116,10 +82,6 @@ function MenuBoard(props) {
 }
 
 MenuBoard.propTypes = {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * Remove this when copying and pasting into your project.
-   */
   window: PropTypes.func,
 };
 
