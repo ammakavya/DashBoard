@@ -1,0 +1,21 @@
+.metrics {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-left: 15%;
+    
+  }
+  
+  .metric {
+    background: #444;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100px;
+  }
+  .text {
+    color: aliceblue;
+   
+  }
+ 

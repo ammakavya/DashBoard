@@ -1,23 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import NavBar from "./components/navbar/NavBar";
+import MenuBoard from "./components/MenuBoard";
+import ProductDetails from "./components/Products/ProductDetails";
+import { Box, Grid, Typography } from "@mui/material";
+import Transactions from "./components/Transactions";
+import Profits from "./components/Profits";
+import GoalsPages from "./components/GoalsPages";
+import ActivityDetails from "./components/ActivityDetails";
+import ReviewPage from "./components/ReviewPage";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <Typography
+        variant="h5"
+        sx={{ color: "white", fontWeight: "bold", marginRight: "70%" }}
+      >
+        Dashboard
+      </Typography>
+      <Box>
+        <Grid container>
+          <Grid md={0.5}>
+            <MenuBoard />
+          </Grid>
+          <Grid md={7.7}>
+            <ProductDetails />
+            <ActivityDetails />
+            <Transactions />
+          </Grid>
+          <Grid md={3.5}>
+            <Profits />
+            <GoalsPages />
+            <ReviewPage />
+          </Grid>
+          <Grid></Grid>
+        </Grid>
+      </Box>
     </div>
   );
 }

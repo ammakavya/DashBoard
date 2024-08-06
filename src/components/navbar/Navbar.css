@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:black ;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.navbar-search input {
+    margin-left: auto;
+    padding: 6px;
+    border-radius: 10px;
+    background-color:#333;
+    font-size: 1em;
+    width: 250px;
+  
+   
+}
+
+
+.navbar-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+   
+}
+.navbar-search{
+    margin-left: 120px;
+   
+
+}
