@@ -24,7 +24,7 @@ const rows = [
 function Transactions() {
   return (
     <Box sx={{ display: 'flex', justifyContent: 'center', mt: 5 }}>  {/* Increased mb for spacing */}
-      <TableContainer component={Paper} sx={{ backgroundColor: '#333', p: 2, mt:23, width: { xs: '100%', sm: '900px', xl: '900px' } }}>
+      <TableContainer component={Paper} sx={{ backgroundColor: '#333', p: 2, mt:23, width: { xs: '100%', sm: '900px', xl: '850px' } }}>
         <Typography variant='h5' sx={{ color: 'white', fontWeight: 'bold', mb: 2 }}>
           Recent Orders
         </Typography>
