@@ -20,7 +20,7 @@ function App() {
             color: "white",
             fontWeight: "bold",
             marginBottom: 1,
-            marginLeft: "100px",
+            marginLeft: "80px",
           }}
         >
           Dashboard
