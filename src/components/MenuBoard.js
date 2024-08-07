@@ -11,7 +11,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import InsertChartIcon from "@mui/icons-material/InsertChart";
 import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 
-const drawerWidth = 100;
+const drawerWidth = 75;
 
 function MenuBoard(props) {
   const { window } = props;
