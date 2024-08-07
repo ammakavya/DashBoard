@@ -22,7 +22,7 @@ function MenuBoard(props) {
   };
 
   const drawer = (
-    <div style={{ height: "100%", padding: "20px", backgroundColor: "#333" }}>
+    <div style={{ height: "100%", padding: "10px", backgroundColor: "#333" }}>
       <WindowIcon fontSize="large" sx={{ color: "#6495ED" }} />
       <Divider sx={{ my: 2 }} />
       <HomeIcon fontSize="large" sx={{ color: "#6495ED" }} />
