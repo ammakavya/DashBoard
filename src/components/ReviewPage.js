@@ -44,7 +44,7 @@ const ReviewPage = () => {
             <Rating
               name={`rating-${index}`}
               defaultValue={review.rating}
-              sx={{ mb: 1 ,backgroundColor:'white' }}
+              sx={{ mb: 1 ,Color:'white' }}
             />
             <Typography variant="subtitle2" sx={{ color: "white" }}>
               {review.review}

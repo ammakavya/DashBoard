@@ -101,7 +101,7 @@ const Profits = () => {
           <CircularProgressWithLabel value={70} size={100} thickness={4} />
          
         </Grid>
-        <Typography sx={{marginLeft:'20%'}} variant="caption"> the value has been rounded off</Typography>
+        <Typography sx={{marginLeft:'35%'}} variant="caption"> the value has been rounded off</Typography>
       
       </Grid>
     </Paper>
