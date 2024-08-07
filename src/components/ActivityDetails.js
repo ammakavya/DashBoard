@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Paper } from '@mui/material';
+import { Container, Paper,Box } from '@mui/material';
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
@@ -40,11 +40,12 @@ const data = [
 
 const ActivityDetails = () => {
   return (
-    <Container sx={{ width: { xs: '100%', sm: '100%' ,xl :'100%'},
+    <Box sx={{}}>
+    <Container sx={{ width: { xs: '100%', sm: '100%' ,xl :'980px',marginRight:'10%' },
      height: '100px' }}>
-      <Paper sx={{ padding: '1px', marginTop: '10px', backgroundColor: '#333' }}>
+      <Paper sx={{ padding: '1px', marginTop: '10px', backgroundColor: '#333'}}>
         <ResponsiveContainer width="100%" height={300}>
-          <BarChart data={data} margin={{ top: 20, right: 30, left: 0, bottom: 5 }}>
+          <BarChart data={data} margin={{ top: 30, right: 30, left: 5, bottom: 5 }}>
             <CartesianGrid strokeDasharray="3 3" vertical={false} />
             <XAxis dataKey="date" />
             <YAxis />
@@ -55,6 +56,7 @@ const ActivityDetails = () => {
         </ResponsiveContainer>
       </Paper>
     </Container>
+    </Box>
   );
 };
 
