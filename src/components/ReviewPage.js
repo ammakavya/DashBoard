@@ -16,7 +16,7 @@ const reviews = [
   {
     name: "Hardin",
     rating: 5,
-    review: "“This restaurant has such a cozy and charming atmosphere! From the moment you walk in, you feel right at home,The warm lighting, rustic decor, and comfortable seating make it an ideal place for a relaxed meal.",
+    review: "“This restaurant has such a cozy and charming atmosphere! From the moment you walk in, you feel right at home.",
   },
 ];
 
