@@ -18,12 +18,12 @@ const rows = [
   createData('Guy Hawkins', 3, '$750', 'cancelled','https://www.shutterstock.com/image-photo/adult-female-avatar-image-on-260nw-2420293027.jpg'),
   createData('Kristin Watson', 4, '$375', 'pending','https://thenewstack.io/wp-content/uploads/2016/11/Joe-Emison_avatar_1479739811.png'),
   createData('Cody Fisher', 5, '$160', 'delivered','https://t3.ftcdn.net/jpg/04/60/91/88/360_F_460918802_XVCymFr7MoziFpnInbTDvrlblYhvAOi2.jpg'),
-  createData('Wade Warren', 1, '$200', 'delivered', 'https://mdbcdn.b-cdn.net/img/new/avatars/2.webp'),
+  createData('Wade Warren kim', 6, '$500', 'delivered', 'https://mdbcdn.b-cdn.net/img/new/avatars/2.webp'),
 ];
 
 function Transactions() {
   return (
-    <Box sx={{ display: 'flex', justifyContent: 'center', mt: 5 ,ml:2}}>  {/* Increased mb for spacing */}
+    <Box sx={{ display: 'flex', justifyContent: 'center', mt: 5}}>  {/* Increased mb for spacing */}
       <TableContainer component={Paper} sx={{ backgroundColor: '#333', p: 2, mt:23, width: { xs: '100%', sm: '100%', xl: '100%' } }}>
         <Typography variant='h5' sx={{ color: 'white', fontWeight: 'bold', mb: 2 }}>
           Recent Orders
