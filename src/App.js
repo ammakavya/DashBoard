@@ -20,7 +20,7 @@ function App() {
             color: "white",
             fontWeight: "bold",
             marginBottom: 1,
-            marginLeft: "60px",
+            marginLeft: "70px",
           }}
         >
           Dashboard
@@ -29,7 +29,7 @@ function App() {
           <Grid item xs={12} sm={4} md={0.5}>
             <MenuBoard />
           </Grid>
-          <Grid item xs={12} sm={8} md={7.5} sx={{ padding: "5px" }}>
+          <Grid item xs={12} sm={8} md={7.5} >
             <ProductDetails />
             <ActivityDetails />
             <Transactions />
