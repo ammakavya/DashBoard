@@ -24,7 +24,7 @@ function App() {
           <Grid item xs={12} sm={4} md={0.8}>
             <MenuBoard />
           </Grid>
-          <Grid item xs={12} sm={8} md={7} sx={{padding:'10px'}}>
+          <Grid item xs={12} sm={8} md={7} sx={{padding:'10px',marginLeft:'20px'}}>
             
               <ProductDetails />
               <ActivityDetails />
