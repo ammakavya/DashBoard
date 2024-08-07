@@ -41,7 +41,7 @@ const data = [
 const ActivityDetails = () => {
   return (
     <Box sx={{}}>
-    <Container sx={{ width: { xs: '100%', sm: '100%' ,xl :'980px',marginRight:'10%' },
+    <Container sx={{ width: { xs: '100%', sm: '100%' ,xl :'100%',marginRight:'10%' },
      height: '100px' }}>
       <Paper sx={{ padding: '1px', marginTop: '10px', backgroundColor: '#333'}}>
         <ResponsiveContainer width="100%" height={300}>
